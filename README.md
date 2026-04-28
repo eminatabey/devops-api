@@ -165,7 +165,7 @@ The project uses two GitHub Actions pipelines:
 | **Security Scan** | SAST analysis with Bandit + dependency audit with Safety |
 | **Docker Build** | Image build, push to GHCR, Trivy scan |
 | **Terraform Validate** | `terraform fmt`, `init`, `validate` |
-| **K8s Validate** | Manifest validation with kubeval |
+| **K8s Validate** | Manifest validation with kubeconform |
 
 ### CD (`cd.yml`) - Triggered on `v*` tag
 
