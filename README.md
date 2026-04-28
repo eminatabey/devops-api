@@ -31,24 +31,7 @@ This project is a REST API built with **FastAPI** that exposes infrastructure mo
 
 ## Architecture
 
-```
-                    +-----------------+
-                    |  GitHub Actions  |
-                    |  CI/CD Pipeline  |
-                    +--------+--------+
-                             |
-              +--------------+--------------+
-              |                             |
-     +--------v--------+         +---------v--------+
-     |     Staging      |         |    Production     |
-     |   Kubernetes     |         |    Kubernetes     |
-     +--------+--------+         +---------+--------+
-              |                             |
-     +--------v--------+         +---------v--------+
-     |   DevOps API     |         |   DevOps API      |
-     |   (FastAPI)      |         |   (FastAPI)        |
-     +-----------------+          +-------------------+
-```
+![Architecture](docs/architecture.png)
 
 ## Prerequisites
 
@@ -64,7 +47,7 @@ This project is a REST API built with **FastAPI** that exposes infrastructure mo
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/<your-username>/devops-api.git
+git clone https://github.com/eminatabey/devops-api.git
 cd devops-api
 ```
 
